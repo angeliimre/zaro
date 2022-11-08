@@ -13,7 +13,7 @@ function DetailBox(){
     <div style={{width:"30%",backgroundColor:"white",padding:"15px",borderRadius:"15px"}} onClick={function(e){e.stopPropagation()}}>
       <b>{detail.kivalasztott.title}</b>
       <p>{detail.kivalasztott.description}</p>
-      <img src={detail.kivalasztott.images[1]} style={{maxWidth:"100%"}}/>
+      <img src={detail.kivalasztott==""?"":detail.kivalasztott.images[1]} style={{maxWidth:"100%"}}/>
     </div>
   </div>)
 }
