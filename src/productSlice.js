@@ -3,7 +3,7 @@ import {createSlice,createAsyncThunk} from "@reduxjs/toolkit"
 const productSlice=createSlice({
     name:"product",
     initialState:{
-        kivalasztott: {},
+        kivalasztott: {images:["a.jpg","b.jpg"]},
         value:[],
         status: "loading",
         szurt:[],

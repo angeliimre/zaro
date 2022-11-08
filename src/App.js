@@ -9,13 +9,13 @@ import {useState} from 'react'
 function DetailBox(){
   const dispatch=useDispatch()
   const detail=useSelector(state=>state.product)
-  return<div onClick={function(){dispatch(eltuntet())}} style={{position:"fixed",left:"0px",top:"0px",backgroundColor:"rgba(0,0,0,0.5)",display:"flex",justifyContent:"center",alignItems:"center",height:"100vh",width:"100%",visibility:detail.show}}>
+  return(<div onClick={function(){dispatch(eltuntet())}} style={{position:"fixed",left:"0px",top:"0px",backgroundColor:"rgba(0,0,0,0.5)",display:"flex",justifyContent:"center",alignItems:"center",height:"100vh",width:"100%",visibility:detail.show}}>
     <div style={{width:"30%",backgroundColor:"white",padding:"15px",borderRadius:"15px"}} onClick={function(e){e.stopPropagation()}}>
       <b>{detail.kivalasztott.title}</b>
       <p>{detail.kivalasztott.description}</p>
       <img src={detail.kivalasztott.images[1]} style={{maxWidth:"100%"}}/>
     </div>
-  </div>
+  </div>)
 }
 
 function Kategoria(){
