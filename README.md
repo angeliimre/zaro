@@ -1,6 +1,9 @@
 # About the project
-In this project I made a react app, which shows products classified by categories, based on a JSON file<br/>
-If you click on the category, you will see the products belonging to the actual category.<br/> After clicking on "Részletek" button on the panels, you will see some information about the selected product.
+In this project I made a react app, which simulates the so called gallows game.<br/>
+You have 5 chances to make a mistake. After all mistakes the appropriate image will appear<br/>
+If you select the right letter, the letter button will be green, and the word will be completed with it<br/>
+If you find all letters, without making 5 more than 5 mistakes, you will win.
+Good luck! :)
 
 # Applied technology
 - HTML
